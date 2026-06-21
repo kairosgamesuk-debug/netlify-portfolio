@@ -4,8 +4,8 @@ on:
   push:
     branches: [main]
   schedule:
-    # Rebuild daily at 6am UTC to pick up new sites
-    - cron: '0 6 * * *'
+        # Rebuild daily at 7am UTC to pick up new sites
+            - cron: '0 7 * * *'
   workflow_dispatch: # manual trigger
 
 jobs:
